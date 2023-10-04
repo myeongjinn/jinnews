@@ -15,7 +15,7 @@ export default async function RootLayout({ children }) {
   
 	  const formData = {
 		username: usernameRef.current.value,
-		email: emailRef.current.value,
+		//email: emailRef.current.value,
 		password: passwordRef.current.value
 	  };
   
@@ -51,8 +51,8 @@ export default async function RootLayout({ children }) {
                <input type="text" ref={usernameRef} placeholder="userid"/>
                <input type="password" ref={passwordRef} placeholder="password"/>
                <div>
-                  <input type="checkbox" className="save" name="key" />
-                  <label for="saveId">아이디 저장</label>
+                  <input type="checkbox" className="save" name="key" /> 
+                  <label for="saveId">아이디 저장</label> 
 
                   <input type="checkbox" className="save" name="pass" />
                   <label for="savePw">비밀번호 저장</label>
